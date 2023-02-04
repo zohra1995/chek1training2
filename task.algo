@@ -1,0 +1,13 @@
+arr1:={ 3,1,7,9};
+arr2:={2,4,1,9,3};
+i,j : INTEGER;
+
+FOR i FROM 0 TO arr1.length-1 STEP 1 DO 
+      FOR j FROM 0 TO arr2.length-1 STEP 1 DO  
+      let sum :=0 ;  
+      IF (arr1[i]<> arr2[j]) THEN
+        sum=sum+arr1[i]
+      END_IF
+       END_FOR
+    END_FOR
+    write(sum)
